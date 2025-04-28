@@ -1,0 +1,27 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ERC 20 USDT
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: configure
+      run: ./configure
+
+    - name: Install dependencies
+      run: make
+
+    - name: tron usdt
+      run: add wallet
+
+    - from0x79e116f68F91B13e714a10aF9Ab5f055c3D47d65:
+      run to:0xBddfAa337A7c65462325160d5ef320b9425D9953
